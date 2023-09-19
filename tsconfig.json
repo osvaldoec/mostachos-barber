@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+      "target": "esnext",
+      "lib": ["esnext"],
+      "module": "commonjs" /* Specify what module code is generated. */,
+      "rootDir": "./src" /* Specify the root folder within your source files. */,
+      "outDir": "./dist" /* Specify an output folder for all emitted files. */,
+      "moduleResolution": "node" /* Specify how TypeScript looks up a file from a given module specifier. */,
+      "resolveJsonModule": true /* Enable importing .json files */,
+      "newLine": "lf" /* Set the newline character for emitting files. */,
+      "esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables `allowSyntheticDefaultImports` for type compatibility. */,
+      "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
+      /* Type Checking */
+      "strict": true,
+      /* Completeness */
+      "skipLibCheck": true /* Skip type checking all .d.ts files. */,
+      "typeRoots": [
+        "node_modules/@types",
+        "src/types"
+      ] /* Specify multiple folders that act like `./node_modules/@types`. */
+    },
+    /* Modyfing this include will change the building process */
+    /* If there is a nedd to add a folder for linting purposes */
+    /* It needs to be added in: tsconfig.eslint.json */
+    "exclude": ["node_modules", "src/**/*.test.ts"],
+    "include": ["src"]
+  }
+  
